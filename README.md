@@ -1,6 +1,4 @@
-# WEB-EXCHANGE-MAMNAGE
-
-> 交易所账户运营系统
+# Vue 全家桶实践
 ## 目录结构
 ```
 ├── build                           //构建相关
