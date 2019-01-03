@@ -1,0 +1,84 @@
+
+[v-cloak] {
+  display: none;
+}
+.fr {
+  float: right;
+}
+.fl{
+  float: left;
+}
+
+// btn css
+.exchange-btn-css{
+  width: 100px;
+  height: 36px;
+  border-radius: 4px;
+}
+
+.ivu-menu-vertical.ivu-menu-light:after { // 修改了侧边栏的黑线
+  background: #fff !important;
+}
+
+// 搜索框距离容器上边距
+.search-padding-top{
+  padding-top: 30px;
+}
+// 搜索框距离容器下边距
+.search-padding-bottom{
+  padding-top: 30px;
+}
+// 表头
+.ivu-table th{
+  color :#fff;
+  background-color:#2699fb !important;
+}
+//侧边栏颜色
+.ivu-menu-light.ivu-menu-vertical .ivu-menu-item-active:not(.ivu-menu-submenu){
+  background: #2699fb !important;
+  color:#fff !important;
+}
+// .ivu-page-item-active{
+//   background-color:#2699fb !important;
+// }
+
+// 返回按钮
+.btn-back{
+  cursor: pointer;
+  height: 19px;
+  font-size: 14px;
+  color:rgba(77, 79, 92, 1)
+}
+
+// 全局的view样式
+.dashView{
+  background:#fff;
+  padding: 40px 20px 0 20px;
+  min-height: 890px;
+}
+
+//定义滚动区域的样式，设置高度无意义。
+::-webkit-scrollbar {
+  width: 8px;
+}   
+// 定义滑块的样式
+::-webkit-scrollbar-thumb:not(.ivu-table){
+  border-radius: 10px;
+  background: #C1C1C1;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);  
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #A8A8A8;
+}
+// 定义滚动条轨道的样式
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: rgab(255,255,255,0.1);
+  opacity: 0;
+  -webkit-box-shadow: inset 0 0 6px rgba(255,255,255,0);   
+}
+// 去除highchart 多出来底部的线
+body .highcharts-grid-line{
+  stroke:none ;
+}

@@ -10,7 +10,15 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+    	'/**': {
+        //  target:'http://192.168.83.54:8010',
+        //  target:'http://192.168.83.54:8010',
+        //  target:'http://192.168.83.88:8080',
+         target:'http://tenant-web.c58c7e25a004943cdad05a1bf31f354b7.cn-shenzhen.alicontainer.com/api',
+         changeOrigin:true
+     	}
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST

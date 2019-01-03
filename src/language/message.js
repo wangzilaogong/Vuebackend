@@ -8,7 +8,8 @@ const MSGS = {
       'refresh': 'Refresh',
       'tips': 'Welcome to Your Vue.js App',
       'switch': 'Switch',
-      'navigator': 'navigator'
+      'navigator': 'navigator',
+      'tradeManager': 'tradeManager'
     }
   },
   zh: {
@@ -18,12 +19,13 @@ const MSGS = {
       'refresh': '刷新',
       'tips': '欢迎使用vue应用',
       'switch': '开关',
-      'navigator': '导航'
+      'navigator': '导航',
+      'tradeManager': '交易所管理'
     }
   }
 }
 
 export default {
-  en: Object.assign(MSGS.en.message, language.en),
-  zh: Object.assign(MSGS.zh.message, language.zh)
+  en_us: Object.assign(MSGS.en.message, language.en),
+  zh_cn: Object.assign(MSGS.zh.message, language.zh)
 }

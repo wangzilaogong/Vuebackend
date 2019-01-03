@@ -11,14 +11,10 @@ export default {
     return {
     }
   },
-  methods: {
-    switchLang () {
-    }
-  },
-  async created () {
-  },
-  async mounted () {
+  created () {
 
+  },
+  methods: {
   }
 }
 </script>

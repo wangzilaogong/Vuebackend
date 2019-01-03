@@ -11,14 +11,18 @@
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit test/e2e/specs",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "testpackage": "node build/testpackage.js"
   },
   "dependencies": {
     "axios": "^0.18.0",
-    "iview": "^3.0.0",
+    "highcharts": "^6.1.1",
+    "iview": "^3.1.5",
     "less": "^3.8.0",
-    "mockjs": "^1.0.1-beta3",
-    "vue": "^2.5.2",
+    "lodash": "^4.17.10",
+    "moment": "^2.22.2",
+    "moment-timezone": "^0.5.23",
+    "vue": "^2.5.17",
     "vue-i18n": "^8.0.0",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
@@ -78,7 +82,7 @@
     "vue-jest": "^1.0.2",
     "vue-loader": "^13.3.0",
     "vue-style-loader": "^3.0.1",
-    "vue-template-compiler": "^2.5.2",
+    "vue-template-compiler": "^2.5.17",
     "webpack": "^3.6.0",
     "webpack-bundle-analyzer": "^2.9.0",
     "webpack-dev-server": "^2.9.1",

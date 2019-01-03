@@ -1,25 +1,19 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+
+import Steps from './modules/steps'
+import gtCheck from './modules/gtCheck'
+import userInfo from './modules/userInfo'
+import header from './modules/header'
+
 Vue.use(Vuex)
 
 const store = new Vuex.Store({
-  state: {
-    user_info: {}
-  },
-  // 更新状态
-  mutations: {
-    // 更新用户信息
-    UPDATEUSERINFO (state, info) {
-      state.user_info = info
-      console.info(info, 'Mutations')
-    }
-  },
-  // 获取状态
-  getters: {
-    // 获取用户信息
-    getUserInfo (state) {
-      return state.user_info
-    }
+  modules: {
+    steps: Steps,
+    gtCheck: gtCheck,
+    userInfo: userInfo,
+    header: header
   }
 })
 

@@ -111,6 +111,8 @@ const webpackConfig = merge(baseWebpackConfig, {
       children: true,
       minChunks: 3
     }),
+     // Ignore all locale files of moment.js
+     new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
 
     // copy custom static assets
     new CopyWebpackPlugin([
