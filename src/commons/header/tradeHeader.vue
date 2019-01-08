@@ -45,60 +45,21 @@
 </template>
 
 <script>
-import {logout} from 'Api/api'
 import langList from '@/assets/js/langList'
 
 export default {
   name: 'tradeHeader',
   data () {
     return {
-      showAuthInfo: true,
-      langList
     }
   },
-  computed: {
-    currentUserInfo () {
-      return this.$store.getters.getUserInfo
-    },
-    currentHeader () {
-      return this.$store.getters.getCurrentHeader
-    },
-    getCurrentBtn () {
-      return this.$store.getters.getCurrentBtn
-    }
-  },
-  watch: { // 监听路由更新
-    $route (to, from) {
-      const urlList = ['Identity', 'Person', 'Enterprise', 'Authres', 'AuthExchange', 'Result']
-      if (urlList.includes(to.name)) {
-        this.showAuthInfo = false
-      } else {
-        this.showAuthInfo = true
-      }
-    }
-  },
+
   mounted () {
-    this.initData()
   },
   methods: {
     changeI18n: function (val) { // i18n切换
       this.setLocalLang(val)
     },
-    async initData () {
-
-    },
-    async logout () {
-      try {
-        const res = await logout()
-        if (res.status === 200) {
-          localStorage.setItem('token', '')
-          this.$router.push({name: 'Login'})
-        }
-      } catch (error) {
-
-      }
-    },
-
     selectedName (name) {
       if (name === 'turn') return false
       if (name === 'logout') {
