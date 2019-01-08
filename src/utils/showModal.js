@@ -1,22 +1,11 @@
 import Vue from 'vue'
 
 import sureModal from 'Commons/confirm/sure'
-import fundsModal from 'Commons/confirm/fundsPass'
-
-import secModal from 'Commons/secondVerModal/Modal'
-import googleModal from 'Commons/secondVerModal/GoogleModal'
-import phoneModal from 'Commons/secondVerModal/PhoneBindModal'
-import openPhoneModal from 'Commons/secondVerModal/OpenPhoneModal'
 
 const vue = new Vue()
 
 const ModalList = {
-  secModal, // 二次验证
-  sureModal, // 确定框
-  fundsModal, // 资金密码校验框
-  googleModal, // 谷歌操作弹窗
-  phoneModal, // 绑定手机的二次验证框
-  openPhoneModal // 开启手机绑定
+  sureModal, // 二次验证
 }
 
 // showModal
