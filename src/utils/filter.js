@@ -1,5 +1,5 @@
 // filter  过滤函数 demo
-import Validator from './validator'
+
 let _filters = {}
 /**
  *字符串修正
@@ -8,11 +8,6 @@ let _filters = {}
  * */
 _filters.strSplit = (str, n) => {
   return str ? str.substring(0, n) : '不存在str'
-}
-
-_filters.timeStrSplit = (str, n) => { // 时间本地化然后格式化
-  const localTimeStr = Validator.localTimeZone(str)
-  return localTimeStr ? localTimeStr.substring(0, n) : '不存在localTimeStr'
 }
 
 export default vue => {
