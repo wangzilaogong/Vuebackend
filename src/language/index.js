@@ -8,7 +8,7 @@ Vue.locale = () => {}
 
 // 获取本机系统语言 && 自动设置语言
 // tips：用户设置的语言优先，然后读取浏览器的，最后是手动设置
-const  browerLang = navigator.language.replace('-','_').toLocaleLowerCase()
+const browerLang = navigator.language.replace('-', '_').toLocaleLowerCase()
 const lang = window.localStorage.getItem('language') || browerLang || 'zh_cn'
 localStorage.setItem('language', lang)
 

@@ -5,11 +5,7 @@ require('babel-plugin-transform-node-env-inline')
 axios.defaults.baseURL = `${process.env.API_HOST}`
 axios.defaults.timeout = 100000 // 超时时间
 axios.defaults.withCredentials = true // 允许跨域携带cookie
-const TOKENLENGTH = localStorage.getItem('token') === null ? -1 : localStorage.getItem('token').length
-axios.defaults.headers = {
-  'Authorization': TOKENLENGTH > 0 ? `Bearer ${localStorage.getItem('token')}` : '',
-  'Content-Type': 'application/json'
-}
+axios.defaults.headers = {}
 
 // axios请求拦截器
 axios.interceptors.request.use(requestSuccessFunc, requestFailedFunc)

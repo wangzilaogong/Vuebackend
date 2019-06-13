@@ -37,7 +37,7 @@ const responseFailedFunc = function (responseError) {
   let code = responseError.response.status
   let url = responseError.response.config.url
   let tip = responseError.response.data.message || responseError.response.data.error
-  const whiteList = ['/accounts/login', '/accounts/verify', '/accounts/verifyLoginOrPassword', '/accounts/close-google-authenticator', '/accounts/open-phone-authenticator', '/accounts/close-phone-authenticator']
+  const whiteList = []
   switch (code) {
     case 400:
       if (whiteList.includes(url)) {
