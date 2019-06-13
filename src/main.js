@@ -14,6 +14,17 @@ Vue.config.productionTip = false
 Vue.use(iView)
 Vue.use(base)
 
+// fix i18n & iview confict
+Vue.use(iView, {
+  i18n: function (path, options) {
+    let value = i18n.t(path, options)
+    if (value !== null && value !== undefined) {
+      return value
+    }
+    return ''
+  }
+})
+
 // 加载进度条
 router.beforeEach((to, from, next) => {
   iView.LoadingBar.start()
