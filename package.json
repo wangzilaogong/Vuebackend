@@ -15,7 +15,7 @@
     "testpackage": "node build/testpackage.js"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "highcharts": "^6.1.1",
     "iview": "^3.1.5",
     "less": "^3.8.0",
